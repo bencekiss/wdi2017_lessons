@@ -5,6 +5,7 @@ class Film
   @@id = 1;
 
   def initialize(options)
+    # these are the names in the forms in the index.erb. Meaning the name attributes.
     @title = options['title']
     @country = options['country']
     @genre = options['genre']
