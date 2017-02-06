@@ -1,0 +1,14 @@
+email: fred@bitmaker.co
+password: abcd1234
+
+got fred object
+  -> salt
+  -> hashed_salted_password
+
+trial = hash(trial_pw, salt) so in this case trial = hash('abcd1234', '6454')
+
+if trial == fred.hashed_salted_password
+  success!
+else
+  access denied!
+end

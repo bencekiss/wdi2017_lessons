@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :contacts # this is some rails magic for now. but only works if i invoke "bin/rails routes"
+
+  root 'contacts#index'
 end
