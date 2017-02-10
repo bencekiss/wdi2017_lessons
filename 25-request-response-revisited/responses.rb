@@ -12,9 +12,8 @@ require 'csv'
 # Net::HTTP.get('example.com', '/index.html')
 
 #make get request to localhost:3000/monsters
-#result = Net::HTTP.get('localhost', '/monsters', 3000)
-#puts result
+# result = Net::HTTP.get('localhost', '/monsters', 3000)
+# puts result
 
-#result = Net::HTTP.get('localhost', '/monsters.text', 3000)
-#puts result
-
+result = Net::HTTP.get('localhost', '/monsters.text', 3000)
+puts result
